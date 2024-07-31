@@ -415,7 +415,7 @@ TextButton_2.TextWrapped = true
 
 -- Scripts:
 
-local function SXKMOW_fake_script() -- TextButton.LocalScript 
+local function JLRJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -423,15 +423,14 @@ local function SXKMOW_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(SXKMOW_fake_script)()
-local function GBVSC_fake_script() -- maintool.LocalScript 
+coroutine.wrap(JLRJ_fake_script)()
+local function IQJSMS_fake_script() -- maintool.LocalScript 
 	local script = Instance.new('LocalScript', maintool)
 
 	local TPbt = script.Parent.toolbar.TPbt
-	local
 end
-coroutine.wrap(GBVSC_fake_script)()
-local function ATETFVI_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(IQJSMS_fake_script)()
+local function XWDWEXK_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -446,4 +445,4 @@ local function ATETFVI_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ATETFVI_fake_script)()
+coroutine.wrap(XWDWEXK_fake_script)()
