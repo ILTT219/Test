@@ -1,0 +1,449 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Line1 = Instance.new("Frame")
+local Title = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local maintool = Instance.new("Frame")
+local Line2 = Instance.new("Frame")
+local toolbar = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local Mainbt = Instance.new("TextButton")
+local TPbt = Instance.new("TextButton")
+local Statbt = Instance.new("TextButton")
+local mainbar = Instance.new("ScrollingFrame")
+local TP = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Map1 = Instance.new("TextButton")
+local Map2 = Instance.new("TextButton")
+local Map3 = Instance.new("TextButton")
+local Map4 = Instance.new("TextButton")
+local Map5 = Instance.new("TextButton")
+local Map6 = Instance.new("TextButton")
+local Map7 = Instance.new("TextButton")
+local Map8 = Instance.new("TextButton")
+local Map9 = Instance.new("TextButton")
+local Map10 = Instance.new("TextButton")
+local Map11 = Instance.new("TextButton")
+local Map12 = Instance.new("TextButton")
+local Map13 = Instance.new("TextButton")
+local Map14 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local default = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.BackgroundTransparency = 0.020
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.BorderSizePixel = 2
+main.Position = UDim2.new(0.200291336, 0, 0.120689653, 0)
+main.Size = UDim2.new(0, 823, 0, 483)
+main.Visible = false
+
+Line1.Name = "Line1"
+Line1.Parent = main
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0, 0, 0.103691526, 0)
+Line1.Size = UDim2.new(1, 0, 0, 2)
+
+Title.Name = "Title"
+Title.Parent = main
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(3.70808984e-08, 0, 0, 0)
+Title.Size = UDim2.new(0, 822, 0, 50)
+
+TextLabel.Parent = Title
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "T219 HUB"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 50.000
+
+maintool.Name = "maintool"
+maintool.Parent = main
+maintool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+maintool.BackgroundTransparency = 1.000
+maintool.BorderColor3 = Color3.fromRGB(0, 0, 0)
+maintool.BorderSizePixel = 0
+maintool.Position = UDim2.new(3.70808984e-08, 0, 0.107660457, 0)
+maintool.Size = UDim2.new(0, 822, 0, 431)
+
+Line2.Name = "Line2"
+Line2.Parent = maintool
+Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line2.BorderSizePixel = 0
+Line2.Position = UDim2.new(0, 205, 0, 0)
+Line2.Size = UDim2.new(0, 2, 1, 0)
+
+toolbar.Name = "toolbar"
+toolbar.Parent = maintool
+toolbar.Active = true
+toolbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toolbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toolbar.BorderSizePixel = 0
+toolbar.Size = UDim2.new(0.127737224, 100, 1, 0)
+toolbar.CanvasSize = UDim2.new(0, 0, 0, 0)
+toolbar.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
+toolbar.ScrollBarThickness = 0
+toolbar.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+UIListLayout.Parent = toolbar
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 2)
+
+Mainbt.Name = "Mainbt"
+Mainbt.Parent = toolbar
+Mainbt.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Mainbt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbt.BorderSizePixel = 0
+Mainbt.Size = UDim2.new(1, 0, 0, 50)
+Mainbt.Font = Enum.Font.Gotham
+Mainbt.Text = "Main"
+Mainbt.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mainbt.TextSize = 25.000
+
+TPbt.Name = "TPbt"
+TPbt.Parent = toolbar
+TPbt.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPbt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TPbt.BorderSizePixel = 0
+TPbt.Size = UDim2.new(1, 0, 0, 50)
+TPbt.Font = Enum.Font.Gotham
+TPbt.Text = "Teleport"
+TPbt.TextColor3 = Color3.fromRGB(255, 255, 255)
+TPbt.TextSize = 25.000
+
+Statbt.Name = "Statbt"
+Statbt.Parent = toolbar
+Statbt.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Statbt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Statbt.BorderSizePixel = 0
+Statbt.Size = UDim2.new(1, 0, 0, 50)
+Statbt.Font = Enum.Font.Gotham
+Statbt.Text = "Stat"
+Statbt.TextColor3 = Color3.fromRGB(255, 255, 255)
+Statbt.TextSize = 25.000
+
+mainbar.Name = "mainbar"
+mainbar.Parent = maintool
+mainbar.Active = true
+mainbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mainbar.BorderSizePixel = 0
+mainbar.Position = UDim2.new(0.251824826, 0, 0, 0)
+mainbar.Size = UDim2.new(0, 616, 0, 431)
+mainbar.CanvasSize = UDim2.new(0, 0, 0, 0)
+mainbar.ScrollBarThickness = 0
+
+TP.Name = "TP"
+TP.Parent = mainbar
+TP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TP.BackgroundTransparency = 1.000
+TP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TP.BorderSizePixel = 0
+TP.Size = UDim2.new(1, 0, 1, 0)
+TP.Visible = false
+
+UIListLayout_2.Parent = TP
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 2)
+
+Map1.Name = "Map1"
+Map1.Parent = TP
+Map1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map1.BorderSizePixel = 0
+Map1.Size = UDim2.new(1, 0, 0, 50)
+Map1.Font = Enum.Font.SourceSans
+Map1.Text = "Area 1"
+Map1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map1.TextSize = 30.000
+
+Map2.Name = "Map2"
+Map2.Parent = TP
+Map2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map2.BorderSizePixel = 0
+Map2.Size = UDim2.new(1, 0, 0, 50)
+Map2.Font = Enum.Font.SourceSans
+Map2.Text = "Area 2"
+Map2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map2.TextSize = 30.000
+
+Map3.Name = "Map3"
+Map3.Parent = TP
+Map3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map3.BorderSizePixel = 0
+Map3.Size = UDim2.new(1, 0, 0, 50)
+Map3.Font = Enum.Font.SourceSans
+Map3.Text = "Area 3"
+Map3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map3.TextSize = 30.000
+
+Map4.Name = "Map4"
+Map4.Parent = TP
+Map4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map4.BorderSizePixel = 0
+Map4.Size = UDim2.new(1, 0, 0, 50)
+Map4.Font = Enum.Font.SourceSans
+Map4.Text = "Area 4"
+Map4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map4.TextSize = 30.000
+
+Map5.Name = "Map5"
+Map5.Parent = TP
+Map5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map5.BorderSizePixel = 0
+Map5.Size = UDim2.new(1, 0, 0, 50)
+Map5.Font = Enum.Font.SourceSans
+Map5.Text = "Area 5"
+Map5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map5.TextSize = 30.000
+
+Map6.Name = "Map6"
+Map6.Parent = TP
+Map6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map6.BorderSizePixel = 0
+Map6.Size = UDim2.new(1, 0, 0, 50)
+Map6.Font = Enum.Font.SourceSans
+Map6.Text = "Area 6"
+Map6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map6.TextSize = 30.000
+
+Map7.Name = "Map7"
+Map7.Parent = TP
+Map7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map7.BorderSizePixel = 0
+Map7.Size = UDim2.new(1, 0, 0, 50)
+Map7.Font = Enum.Font.SourceSans
+Map7.Text = "Area 7"
+Map7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map7.TextSize = 30.000
+
+Map8.Name = "Map8"
+Map8.Parent = TP
+Map8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map8.BorderSizePixel = 0
+Map8.Size = UDim2.new(1, 0, 0, 50)
+Map8.Font = Enum.Font.SourceSans
+Map8.Text = "Area 8"
+Map8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map8.TextSize = 30.000
+
+Map9.Name = "Map9"
+Map9.Parent = TP
+Map9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map9.BorderSizePixel = 0
+Map9.Size = UDim2.new(1, 0, 0, 50)
+Map9.Font = Enum.Font.SourceSans
+Map9.Text = "Area 9"
+Map9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map9.TextSize = 30.000
+
+Map10.Name = "Map10"
+Map10.Parent = TP
+Map10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map10.BorderSizePixel = 0
+Map10.Size = UDim2.new(1, 0, 0, 50)
+Map10.Font = Enum.Font.SourceSans
+Map10.Text = "Area 10"
+Map10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map10.TextSize = 30.000
+
+Map11.Name = "Map11"
+Map11.Parent = TP
+Map11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map11.BorderSizePixel = 0
+Map11.Size = UDim2.new(1, 0, 0, 50)
+Map11.Font = Enum.Font.SourceSans
+Map11.Text = "Area 11"
+Map11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map11.TextSize = 30.000
+
+Map12.Name = "Map12"
+Map12.Parent = TP
+Map12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map12.BorderSizePixel = 0
+Map12.Size = UDim2.new(1, 0, 0, 50)
+Map12.Font = Enum.Font.SourceSans
+Map12.Text = "Area 12"
+Map12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map12.TextSize = 30.000
+
+Map13.Name = "Map13"
+Map13.Parent = TP
+Map13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map13.BorderSizePixel = 0
+Map13.Size = UDim2.new(1, 0, 0, 50)
+Map13.Font = Enum.Font.SourceSans
+Map13.Text = "Area 13"
+Map13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map13.TextSize = 30.000
+
+Map14.Name = "Map14"
+Map14.Parent = TP
+Map14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Map14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map14.BorderSizePixel = 0
+Map14.Size = UDim2.new(1, 0, 0, 50)
+Map14.Font = Enum.Font.SourceSans
+Map14.Text = "Area 14"
+Map14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Map14.TextSize = 30.000
+
+Frame.Parent = mainbar
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.Visible = false
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+default.Name = "default"
+default.Parent = mainbar
+default.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+default.BorderColor3 = Color3.fromRGB(0, 0, 0)
+default.BorderSizePixel = 0
+default.Size = UDim2.new(1, 0, 1, 0)
+
+TextLabel_3.Parent = default
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.00162337662, 0, 0.0742459372, 0)
+TextLabel_3.Size = UDim2.new(0, 615, 0, 63)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Welcome To T219 HUB"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = default
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.00324675324, 0, 0.322505802, 0)
+TextLabel_4.Size = UDim2.new(1, 0, 0, 50)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "https://discord.gg/CN6DYZSD"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20.000
+
+TextLabel_5.Parent = TextLabel_4
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = "DISCORD :"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 20.000
+TextLabel_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton.Parent = TextLabel_4
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.678571403, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "COPY"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 30.000
+
+TextButton_2.Parent = ScreenGui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0972111523, 0, 0.120689653, 0)
+TextButton_2.Size = UDim2.new(0, 50, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "OFF"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 25.000
+TextButton_2.TextWrapped = true
+
+-- Scripts:
+
+local function SXKMOW_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(script.Parent.Parent.Text)
+	end)
+	
+end
+coroutine.wrap(SXKMOW_fake_script)()
+local function GBVSC_fake_script() -- maintool.LocalScript 
+	local script = Instance.new('LocalScript', maintool)
+
+	local TPbt = script.Parent.toolbar.TPbt
+	local
+end
+coroutine.wrap(GBVSC_fake_script)()
+local function ATETFVI_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local button = script.Parent
+	local main = script.Parent.Parent.main
+	button.MouseButton1Click:Connect(function()
+		if button.Text == "OFF" then
+			button.Text = "ON"
+			main.Visible = true
+		else
+			button.Text = "OFF"
+			main.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ATETFVI_fake_script)()
